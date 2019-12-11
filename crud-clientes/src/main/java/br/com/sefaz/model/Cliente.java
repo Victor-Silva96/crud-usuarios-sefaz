@@ -7,7 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -23,7 +24,7 @@ public class Cliente {
 	private String email;
 	private String nome;
 	private String senha;
-	@OneToMany(targetEntity=Telefone.class)
+	@ManyToMany(targetEntity=Telefone.class)
 	private List<Telefone> telefones;
 	
 	public Long getId() {
