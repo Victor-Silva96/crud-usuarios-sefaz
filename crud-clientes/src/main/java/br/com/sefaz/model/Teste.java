@@ -3,44 +3,32 @@ package br.com.sefaz.model;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
+import br.com.sefaz.dao.ClienteDAO;
+import br.com.sefaz.dao.impl.ClienteDAOImpl;
 
 public class Teste {
 	public static void main(String[] args) {
-		EntityManagerFactory emfactory = Persistence.
-			      createEntityManagerFactory( "crud-clientes" );
-			      EntityManager entitymanager = emfactory.
-			      createEntityManager( );
-			      entitymanager.getTransaction( ).begin( );
-			      
+		ClienteDAO clienteDao = new ClienteDAOImpl();
 		Cliente cliente = new Cliente();
-		cliente.setEmail("victor@.com");
-		cliente.setNome("victor");
-		cliente.setSenha("123");
+		Telefone telefone = new Telefone();
+		telefone.setDdd(81);
+		telefone.setNumero("918232421");
+		telefone.setTipo("residencial");
+		List<Telefone> telefones = new ArrayList<Telefone>();
 		
-		Telefone telefone1 = new Telefone();
-		telefone1.setDdd(333);
-		telefone1.setNumero("99999");
-		telefone1.setTipo("casa");
+		telefones.add(telefone);
 		
-		Telefone telefone2 = new Telefone();
-		telefone2.setDdd(444);
-		telefone2.setNumero("99999");
-		telefone2.setTipo("casa");
-		entitymanager.persist(telefone1);
-		entitymanager.persist(telefone2);
-		List<Telefone> telefones = new ArrayList<>();
-		telefones.add(telefone1);
-		telefones.add(telefone2);
-		
+		cliente.setEmail("amanda@hotmail.com");
+		cliente.setNome("amanda");
+		cliente.setSenha("7432");
 		cliente.setTelefones(telefones);
 		
-		entitymanager.persist(cliente);
+		clienteDao.inserirCliente(cliente); 
 		
-		entitymanager.getTransaction( ).commit( );
-	      entitymanager.close( );
-	      emfactory.close( );
+		Cliente cliente2=clienteDao.getClienteAutenticado(cliente.getEmail(), cliente.getSenha());
+		
+		System.out.println(cliente2);
+		
+		
 	}
 }

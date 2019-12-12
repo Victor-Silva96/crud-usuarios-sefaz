@@ -10,6 +10,10 @@ import javax.persistence.Id;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
+
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.CascadeType;
 
 @Entity
 @Table(name="CLIENTES")
@@ -20,11 +24,12 @@ public class Cliente {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	
+	@Column(unique=true)
 	private String email;
 	private String nome;
 	private String senha;
 	@ManyToMany(targetEntity=Telefone.class)
+	@Cascade(CascadeType.ALL)
 	private List<Telefone> telefones;
 	
 	public Long getId() {
@@ -51,10 +56,10 @@ public class Cliente {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-	public List getTelefones() {
+	public List<Telefone> getTelefones() {
 		return telefones;
 	}
-	public void setTelefones(List telefones) {
+	public void setTelefones(List<Telefone> telefones) {
 		this.telefones = telefones;
 	}
 	
