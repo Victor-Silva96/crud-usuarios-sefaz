@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Home</title>
+</h:head>
+
+		<p:commandButton action="/home/home-page?faces-redirect=true"
+			title="Inicio" value="Inicio"></p:commandButton>
+		<p:commandButton action="#{clienteLogado.fazerLogout}" title="Logout"
+			value="Logout"></p:commandButton>
+<h:body>
+
+	<h:form>
+		<p:dataTable var="cliente" value="#{clienteBean.clientes}" rows="10"
+			id="list-clientes" paginator="true"
+			paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+			reflow="true">
+
+			<f:facet name="header">
+            Home
+        </f:facet>
+			<p:column headerText="Id">
+				<h:outputText value="#{cliente.id}" />
+			</p:column>
+
+			<p:column headerText="Email">
+				<h:outputText value="#{cliente.email}" />
+			</p:column>
+
+			<p:column headerText="Nome">
+				<h:outputText value="#{cliente.nome}" />
+			</p:column>
+
+			<p:column headerText="Senha">
+				<h:outputText value="#{cliente.senha}" />
+			</p:column>
+
+			<p:column>
+				<p:commandButton
+					action="#{clienteBean.redirectAlterarCliente(cliente)}"
+					title="Alterar" value="Alterar">
+				</p:commandButton>
+
+				<p:commandButton action="#{clienteBean.excluirCliente(cliente)}"
+					title="Excluir" value="Excluir" immediate="true" update="@all">
+				</p:commandButton>
+			</p:column>
+
+		</p:dataTable>
+	</h:form>
+	<p:commandButton action="#{clienteBean.redirectCadastrar}"
+		title="Cadastrar" value="Cadastrar">
+	</p:commandButton>
+
+</h:body>
+
+</html>

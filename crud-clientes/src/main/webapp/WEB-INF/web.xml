@@ -8,25 +8,30 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>Faces Servlet</servlet-name>
-    <url-pattern>/faces/*</url-pattern>
+    <url-pattern>*.xhtml</url-pattern>
   </servlet-mapping>
   
   <welcome-file-list>
-  	<welcome-file>index.xhtml</welcome-file>
+  	<welcome-file>login.xhtml</welcome-file>
   </welcome-file-list>
   
   <filter>
   	<filter-name>LoginFilter</filter-name>
-  	<filter-class>br.com.sefaz.LoginFilter</filter-class>
+  	<filter-class>br.com.sefaz.filter.LoginFilter</filter-class>
   </filter>
   
   <filter-mapping>
   	<filter-name>LoginFilter</filter-name>
-  	<url-pattern>/login.xhtml</url-pattern>
+  	<url-pattern>/home/*</url-pattern>
   </filter-mapping>
   
   <session-config>
   	<session-timeout>60</session-timeout>
   </session-config>
+  
+  <context-param>
+    <param-name>primefaces.THEME</param-name>
+    <param-value>nova-light</param-value>
+</context-param>
   
 </web-app>

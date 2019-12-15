@@ -29,7 +29,7 @@ public class LoginFilter implements Filter {
 		HttpSession session = ((HttpServletRequest) request).getSession(false);
 		
 		if(session != null) {
-			cliente = (Cliente) session.getAttribute("clienteLogado");
+			cliente = (Cliente) session.getAttribute("cliente");
 		}
 		
 		if(cliente == null) {

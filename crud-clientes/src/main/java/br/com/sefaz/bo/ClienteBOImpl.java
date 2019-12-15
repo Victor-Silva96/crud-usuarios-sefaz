@@ -8,7 +8,7 @@ import br.com.sefaz.model.Cliente;
 
 public class ClienteBOImpl implements ClienteBO {
 	
-	ClienteDAO clienteDAO = new ClienteDAOImpl();
+	private ClienteDAO clienteDAO = new ClienteDAOImpl();
 
 	@Override
 	public Cliente getUsuarioLogado(String email, String senha) {
