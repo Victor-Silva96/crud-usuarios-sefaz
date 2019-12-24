@@ -2,18 +2,15 @@ package br.com.sefaz.model;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
-import javax.persistence.UniqueConstraint;
-
-import org.hibernate.annotations.Cascade;
-import org.hibernate.annotations.CascadeType;
 
 @Entity
 @Table(name="CLIENTES")
@@ -28,8 +25,7 @@ public class Cliente {
 	private String email;
 	private String nome;
 	private String senha;
-	@ManyToMany(targetEntity=Telefone.class)
-	@Cascade(CascadeType.ALL)
+	@ManyToMany(targetEntity=Telefone.class, cascade = CascadeType.ALL, fetch = FetchType.EAGER  )
 	private List<Telefone> telefones;
 	
 	public Long getId() {
@@ -82,7 +78,8 @@ public class Cliente {
 		if (id == null) {
 			if (other.id != null)
 				return false;
-		} else if (!id.equals(other.id))
+		} 
+		else if (!id.equals(other.id))
 			return false;
 		return true;
 	}

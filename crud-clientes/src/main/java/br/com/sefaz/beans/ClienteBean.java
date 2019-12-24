@@ -4,23 +4,30 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
+import javax.enterprise.context.SessionScoped;
 import javax.faces.application.FacesMessage;
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
+import javax.inject.Inject;
+import javax.inject.Named;
 
 import br.com.sefaz.bo.ClienteBO;
-import br.com.sefaz.bo.ClienteBOImpl;
+import br.com.sefaz.constants.Constants;
 import br.com.sefaz.model.Cliente;
 import br.com.sefaz.model.Telefone;
 import br.com.sefaz.session.Session;
+import java.io.Serializable;
 
-@ManagedBean(name="clienteBean")
+@Named(value="clienteBean")
 @SessionScoped
-public class ClienteBean {
-	private ClienteBO clienteBO = new ClienteBOImpl();
-	private List<Cliente> clientes;
-	private Cliente cliente;
+public class ClienteBean implements Serializable {
+
+	private static final long serialVersionUID = 3202599747989602124L;
+	@Inject
+	private transient ClienteBO clienteBO;
+	private transient List<Cliente> clientes;
+	private transient Cliente cliente;
+	@Inject
+	private FacesContext context;
 	
 	@PostConstruct
 	public void init() {
@@ -33,20 +40,18 @@ public class ClienteBean {
 	}
 	
 	public void alterarCliente() {
-		FacesContext context = FacesContext.getCurrentInstance();
 		boolean status = clienteBO.alterarCliente(cliente);
 		
 		if(status) {
-			context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO,"Sucesso","Cliente alterado"));
+			context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO,Constants.SUCESSO.getNome(),"Cliente alterado"));
 			clientes = clienteBO.listarClientes();
 		}
 		else {
-			context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR,"Error","Erro tecnico inesperado"));
+			context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR,Constants.ERROR.getNome(),Constants.ERROTECNICO.getNome()));
 		}
 	}
 	
 	public void cadastrarCliente() {
-		FacesContext context = FacesContext.getCurrentInstance();
 		boolean status = clienteBO.inserirCliente(cliente);
 		
 		if(status) {
@@ -67,7 +72,6 @@ public class ClienteBean {
 	}
 	
 	public String excluirCliente(Cliente cliente) {
-		FacesContext context = FacesContext.getCurrentInstance();
 		boolean status = clienteBO.deletarCliente(cliente);
 		
 		if(status) {

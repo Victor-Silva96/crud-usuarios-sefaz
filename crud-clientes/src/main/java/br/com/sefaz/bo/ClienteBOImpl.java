@@ -2,13 +2,15 @@ package br.com.sefaz.bo;
 
 import java.util.List;
 
+import javax.inject.Inject;
+
 import br.com.sefaz.dao.ClienteDAO;
-import br.com.sefaz.dao.impl.ClienteDAOImpl;
 import br.com.sefaz.model.Cliente;
 
 public class ClienteBOImpl implements ClienteBO {
 	
-	private ClienteDAO clienteDAO = new ClienteDAOImpl();
+	@Inject
+	private ClienteDAO clienteDAO;
 
 	@Override
 	public Cliente getUsuarioLogado(String email, String senha) {

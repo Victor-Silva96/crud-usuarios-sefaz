@@ -1,30 +1,31 @@
 package br.com.sefaz.beans;
 
+import javax.enterprise.context.RequestScoped;
 import javax.faces.application.FacesMessage;
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
-import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
+import javax.inject.Inject;
+import javax.inject.Named;
 
 import br.com.sefaz.bo.ClienteBO;
-import br.com.sefaz.bo.ClienteBOImpl;
 import br.com.sefaz.model.Cliente;
 import br.com.sefaz.session.Session;
 
-@ManagedBean(name = "clienteLogado")
+@Named(value = "clienteLogado")
 @RequestScoped
 public class ClienteLogadoBean {
-	private ClienteBO clienteBO = new ClienteBOImpl();
+	@Inject
+	private ClienteBO clienteBO;
 	
 	private String email;
 	private String senha;
+	@Inject
+	FacesContext context;
 	
 	public Cliente getUser() {
 	       return (Cliente) Session.getInstance().getAttribute("cliente");
 	    }
 	
 	public String fazerLogin() {
-		FacesContext context = FacesContext.getCurrentInstance();
 		Cliente cliente = clienteBO.getUsuarioLogado(email, senha);
 		
 		if(cliente == null) {
