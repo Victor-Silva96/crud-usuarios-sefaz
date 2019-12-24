@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Login</title>
+</h:head>
+
+<h:body>
+	<h:form>
+    <p:panel id="panel" header="Login">
+ 
+        <p:messages id="msgs" closable="true" showDetail="true"/>
+ 
+        <h:panelGrid columns="3" cellpadding="5">
+            <p:outputLabel for="Email" value="Email:" />
+            <p:inputText id="Email" value="#{clienteLogado.email}" required="true" label="Email" 
+            requiredMessage="Por favor digite seu email" validatorMessage="Email no formato invalido">
+            
+            <f:validateRegex pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$" />
+            </p:inputText>
+            <p:message for="Email" display="icon" />
+ 
+            <p:outputLabel for="Senha" value="Senha:" />
+            <p:password id="Senha" value="#{clienteLogado.senha}" label="Senha" required="true" 
+            requiredMessage="Por favor digite sua senha" feedback="true">
+            </p:password>
+            <p:message for="Senha" display="icon" />
+ 
+        </h:panelGrid>
+ 
+        <p:commandButton value="Login" update="panel" action="#{clienteLogado.fazerLogin}" />
+    </p:panel>
+</h:form>
+<h:form>
+<p:commandButton value="Cadastrar" action="#{clienteBean.redirectCadastrar}" />
+</h:form>
+</h:body>
+</html>
+

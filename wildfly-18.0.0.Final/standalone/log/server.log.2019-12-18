@@ -1,0 +1,767 @@
+2019-12-18 19:10:12,996 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.1.Final
+2019-12-18 19:10:13,790 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.11.Final
+2019-12-18 19:10:13,808 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2019-12-18 19:10:13,993 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 18.0.0.Final (WildFly Core 10.0.0.Final) starting
+2019-12-18 19:10:13,997 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jre1.8.0_231\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jre1.8.0_231\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jre1.8.0_231
+	java.io.tmpdir = C:\Users\VICTOR~1.SIL\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jre1.8.0_231\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_231/bin/server;C:/Program Files/Java/jre1.8.0_231/bin;C:/Program Files/Java/jre1.8.0_231/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\PuTTY\;C:\Users\victor.hugo.b.silva\Downloads\apache-maven-3.6.0\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\TortoiseGit\bin;C:\Users\victor.hugo.b.silva\Downloads\instantclient_19_3;C:\Program Files\nodejs\;C:\Users\victor.hugo.b.silva\AppData\Local\Microsoft\WindowsApps;C:\Users\victor.hugo.b.silva\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\victor.hugo.b.silva\AppData\Local\Programs\Git\bin;C:\Users\victor.hugo.b.silva\AppData\Local\Programs\Git\cmd;C:\Users\victor.hugo.b.silva\AppData\Roaming\npm;;C:\workspace-oi\eclipse;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_231-b11
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_231
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.231-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final
+	jboss.host.name = cpx-pxua5rvztpr
+	jboss.modules.dir = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = cpx-pxua5rvztpr
+	jboss.qualified.host.name = cpx-pxua5rvztpr
+	jboss.server.base.dir = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone
+	jboss.server.config.dir = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\log
+	jboss.server.name = cpx-pxua5rvztpr
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\configuration\logging.properties
+	module.path = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\modules
+	org.jboss.boot.log.file = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\log\boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = JBossTools: WildFly 18.0
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jre1.8.0_231\lib\resources.jar;C:\Program Files\Java\jre1.8.0_231\lib\rt.jar;C:\Program Files\Java\jre1.8.0_231\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_231\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_231\lib\jce.jar;C:\Program Files\Java\jre1.8.0_231\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_231\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_231\classes
+	sun.boot.library.path = C:\Program Files\Java\jre1.8.0_231\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.country.format = BR
+	user.dir = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\bin
+	user.home = C:\Users\victor.hugo.b.silva
+	user.language = en
+	user.language.format = pt
+	user.name = victor.hugo.b.silva
+	user.script = 
+	user.timezone = GMT-03:00
+	user.variant = 
+2019-12-18 19:10:13,998 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=JBossTools: WildFly 18.0 -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\log\boot.log -Dlogging.configuration=file:C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\configuration\logging.properties -Djboss.home.dir=C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2019-12-18 19:10:15,125 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 1.10.3.Final
+2019-12-18 19:10:15,768 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-18 19:10:15,789 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 34) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-18 19:10:15,827 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found crud-clientes-0.0.1.war in deployment directory. To trigger deployment create a file called crud-clientes-0.0.1.war.dodeploy
+2019-12-18 19:10:15,861 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-12-18 19:10:15,885 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.7.3.Final
+2019-12-18 19:10:15,895 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.7.3.Final
+2019-12-18 19:10:15,938 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 51) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-12-18 19:10:15,951 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 72) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-12-18 19:10:15,974 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 62) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+2019-12-18 19:10:15,977 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 63) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2019-12-18 19:10:15,978 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 61) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2019-12-18 19:10:15,979 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 60) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2019-12-18 19:10:15,984 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 53) WFLYRS0016: RESTEasy version 3.9.0.Final
+2019-12-18 19:10:15,990 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 64) WFLYNAM0001: Activating Naming Subsystem
+2019-12-18 19:10:15,994 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 70) WFLYSEC0002: Activating Security Subsystem
+2019-12-18 19:10:16,003 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 58) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-12-18 19:10:16,008 INFO  [org.jboss.as.security] (MSC service thread 1-7) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-12-18 19:10:16,010 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 74) WFLYWS0002: Activating WebServices Extension
+2019-12-18 19:10:16,027 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0003: Undertow 2.0.26.Final starting
+2019-12-18 19:10:16,039 INFO  [org.jboss.as.connector] (MSC service thread 1-4) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.17.Final)
+2019-12-18 19:10:16,088 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 43) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-12-18 19:10:16,129 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-12-18 19:10:16,140 INFO  [org.jboss.as.naming] (MSC service thread 1-7) WFLYNAM0003: Starting Naming Service
+2019-12-18 19:10:16,163 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-12-18 19:10:16,272 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 73) WFLYUT0014: Creating file handler for path 'C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-12-18 19:10:16,850 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 52) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2019-12-18 19:10:16,853 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2019-12-18 19:10:16,853 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2019-12-18 19:10:16,897 INFO  [org.jboss.as.patching] (MSC service thread 1-4) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-12-18 19:10:16,903 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 5.0.15.Final
+2019-12-18 19:10:16,908 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0012: Started server default-server.
+2019-12-18 19:10:17,147 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0018: Host default-host starting
+2019-12-18 19:10:17,156 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-4) WFLYDM0111: Keystore C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-12-18 19:10:17,175 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\deployments
+2019-12-18 19:10:17,184 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "crud-clientes-0.0.1.war" (runtime-name: "crud-clientes-0.0.1.war")
+2019-12-18 19:10:17,216 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2019-12-18 19:10:17,234 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0493: EJB subsystem suspension complete
+2019-12-18 19:10:17,325 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-12-18 19:10:17,850 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2019-12-18 19:10:18,047 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBossWS 5.3.0.Final (Apache CXF 3.3.3) 
+2019-12-18 19:10:18,742 INFO  [org.jboss.as.jpa] (MSC service thread 1-4) WFLYJPA0002: Read persistence.xml for crud-clientes
+2019-12-18 19:10:19,149 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment crud-clientes-0.0.1.war
+2019-12-18 19:10:19,264 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-8) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.16.Final
+2019-12-18 19:10:19,381 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-4) HV000001: Hibernate Validator 6.0.17.Final
+2019-12-18 19:10:19,492 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 76) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'crud-clientes-0.0.1.war#crud-clientes'
+2019-12-18 19:10:19,520 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 76) HHH000204: Processing PersistenceUnitInfo [
+	name: crud-clientes
+	...]
+2019-12-18 19:10:19,612 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'ClienteDAOImpl' in deployment unit 'deployment "crud-clientes-0.0.1.war"' are as follows:
+
+	java:global/crud-clientes-0.0.1/ClienteDAOImpl!br.com.sefaz.dao.ClienteDAO
+	java:app/crud-clientes-0.0.1/ClienteDAOImpl!br.com.sefaz.dao.ClienteDAO
+	java:module/ClienteDAOImpl!br.com.sefaz.dao.ClienteDAO
+	ejb:/crud-clientes-0.0.1/ClienteDAOImpl!br.com.sefaz.dao.ClienteDAO?stateful
+	java:global/crud-clientes-0.0.1/ClienteDAOImpl
+	java:app/crud-clientes-0.0.1/ClienteDAOImpl
+	java:module/ClienteDAOImpl
+
+2019-12-18 19:10:19,689 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 76) HHH000412: Hibernate Core {5.3.12.Final}
+2019-12-18 19:10:19,691 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 76) HHH000206: hibernate.properties not found
+2019-12-18 19:10:19,950 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 77) WFLYCLINF0002: Started client-mappings cache from ejb container
+2019-12-18 19:10:20,005 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 76) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+2019-12-18 19:10:20,181 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0004: Deploying JDBC-compliant driver class org.hsqldb.jdbc.JDBCDriver (version 2.4)
+2019-12-18 19:10:20,215 INFO  [org.jboss.weld.Version] (MSC service thread 1-3) WELD-000900: 3.1.2 (Final)
+2019-12-18 19:10:20,293 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = crud-clientes-0.0.1.war_org.hsqldb.jdbc.JDBCDriver_2_4
+2019-12-18 19:10:20,631 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 76) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'crud-clientes-0.0.1.war#crud-clientes'
+2019-12-18 19:10:20,889 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 76) HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2019-12-18 19:10:20,984 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 76) Envers integration enabled? : true
+2019-12-18 19:10:21,855 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 76) SQL Error: 42102, SQLState: 42S02
+2019-12-18 19:10:21,856 ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 76) Table "SYSTEM_SEQUENCES" not found; SQL statement:
+select sequence_name from information_schema.system_sequences [42102-193]
+2019-12-18 19:10:21,860 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 76) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@262df3b1
+2019-12-18 19:10:21,863 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 76) MSC000001: Failed to start service jboss.persistenceunit."crud-clientes-0.0.1.war#crud-clientes": org.jboss.msc.service.StartException in service jboss.persistenceunit."crud-clientes-0.0.1.war#crud-clientes": javax.persistence.PersistenceException: [PersistenceUnit: crud-clientes] Unable to build Hibernate SessionFactory
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:198)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:128)
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:658)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:212)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.lang.Thread.run(Unknown Source)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: crud-clientes] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:1016)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:942)
+	at org.jboss.as.jpa.hibernate5.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:170)
+	... 9 more
+Caused by: org.hibernate.exception.SQLGrammarException: Unable to build DatabaseInformation
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:106)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:140)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:96)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939)
+	... 11 more
+Caused by: org.h2.jdbc.JdbcSQLException: Table "SYSTEM_SEQUENCES" not found; SQL statement:
+select sequence_name from information_schema.system_sequences [42102-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.schema.Schema.getTableOrView(Schema.java:437)
+	at org.h2.command.Parser.readTableOrView(Parser.java:5372)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1257)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1897)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:2045)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:1891)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1709)
+	at org.h2.command.Parser.parseSelect(Parser.java:1697)
+	at org.h2.command.Parser.parsePrepared(Parser.java:445)
+	at org.h2.command.Parser.parse(Parser.java:317)
+	at org.h2.command.Parser.parse(Parser.java:289)
+	at org.h2.command.Parser.prepareCommand(Parser.java:254)
+	at org.h2.engine.Session.prepareLocal(Session.java:561)
+	at org.h2.engine.Session.prepareCommand(Session.java:502)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1203)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:73)
+	at org.jboss.jca.adapters.jdbc.WrappedStatement.executeQuery(WrappedStatement.java:397)
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:42)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:65)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:59)
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:132)
+	... 17 more
+
+2019-12-18 19:10:21,930 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "crud-clientes-0.0.1.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"crud-clientes-0.0.1.war#crud-clientes\"" => "javax.persistence.PersistenceException: [PersistenceUnit: crud-clientes] Unable to build Hibernate SessionFactory
+    Caused by: javax.persistence.PersistenceException: [PersistenceUnit: crud-clientes] Unable to build Hibernate SessionFactory
+    Caused by: org.hibernate.exception.SQLGrammarException: Unable to build DatabaseInformation
+    Caused by: org.h2.jdbc.JdbcSQLException: Table \"SYSTEM_SEQUENCES\" not found; SQL statement:
+select sequence_name from information_schema.system_sequences [42102-193]"}}
+2019-12-18 19:10:21,943 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 44) WFLYSRV0010: Deployed "crud-clientes-0.0.1.war" (runtime-name : "crud-clientes-0.0.1.war")
+2019-12-18 19:10:21,945 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.persistenceunit."crud-clientes-0.0.1.war#crud-clientes": javax.persistence.PersistenceException: [PersistenceUnit: crud-clientes] Unable to build Hibernate SessionFactory
+WFLYCTL0448: 181 additional services are down due to their dependencies being missing or failed
+2019-12-18 19:10:21,992 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-12-18 19:10:21,995 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2019-12-18 19:10:21,996 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2019-12-18 19:10:21,996 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 18.0.0.Final (WildFly Core 10.0.0.Final) started (with errors) in 9875ms - Started 699 of 1096 services (186 services failed or missing dependencies, 375 services are lazy, passive or on-demand)
+2019-12-18 19:38:01,157 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.1.Final
+2019-12-18 19:38:01,571 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.11.Final
+2019-12-18 19:38:01,582 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2019-12-18 19:38:01,701 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 18.0.0.Final (WildFly Core 10.0.0.Final) starting
+2019-12-18 19:38:01,703 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jre1.8.0_231\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jre1.8.0_231\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jre1.8.0_231
+	java.io.tmpdir = C:\Users\VICTOR~1.SIL\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jre1.8.0_231\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_231/bin/server;C:/Program Files/Java/jre1.8.0_231/bin;C:/Program Files/Java/jre1.8.0_231/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\PuTTY\;C:\Users\victor.hugo.b.silva\Downloads\apache-maven-3.6.0\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\TortoiseGit\bin;C:\Users\victor.hugo.b.silva\Downloads\instantclient_19_3;C:\Program Files\nodejs\;C:\Users\victor.hugo.b.silva\AppData\Local\Microsoft\WindowsApps;C:\Users\victor.hugo.b.silva\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\victor.hugo.b.silva\AppData\Local\Programs\Git\bin;C:\Users\victor.hugo.b.silva\AppData\Local\Programs\Git\cmd;C:\Users\victor.hugo.b.silva\AppData\Roaming\npm;;C:\workspace-oi\eclipse;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_231-b11
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_231
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.231-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final
+	jboss.host.name = cpx-pxua5rvztpr
+	jboss.modules.dir = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = cpx-pxua5rvztpr
+	jboss.qualified.host.name = cpx-pxua5rvztpr
+	jboss.server.base.dir = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone
+	jboss.server.config.dir = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\log
+	jboss.server.name = cpx-pxua5rvztpr
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\configuration\logging.properties
+	module.path = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\modules
+	org.jboss.boot.log.file = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\log\boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = JBossTools: WildFly 18.0
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jre1.8.0_231\lib\resources.jar;C:\Program Files\Java\jre1.8.0_231\lib\rt.jar;C:\Program Files\Java\jre1.8.0_231\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_231\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_231\lib\jce.jar;C:\Program Files\Java\jre1.8.0_231\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_231\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_231\classes
+	sun.boot.library.path = C:\Program Files\Java\jre1.8.0_231\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.country.format = BR
+	user.dir = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\bin
+	user.home = C:\Users\victor.hugo.b.silva
+	user.language = en
+	user.language.format = pt
+	user.name = victor.hugo.b.silva
+	user.script = 
+	user.timezone = GMT-03:00
+	user.variant = 
+2019-12-18 19:38:01,706 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=JBossTools: WildFly 18.0 -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\log\boot.log -Dlogging.configuration=file:C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\configuration\logging.properties -Djboss.home.dir=C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2019-12-18 19:38:02,575 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 1.10.3.Final
+2019-12-18 19:38:03,110 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-18 19:38:03,131 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 13) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-18 19:38:03,152 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0015: Re-attempting failed deployment crud-clientes-0.0.1.war
+2019-12-18 19:38:03,177 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found crud-clientes-0.0.1.war in deployment directory. To trigger deployment create a file called crud-clientes-0.0.1.war.dodeploy
+2019-12-18 19:38:03,208 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-12-18 19:38:03,227 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.7.3.Final
+2019-12-18 19:38:03,236 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.7.3.Final
+2019-12-18 19:38:03,299 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 51) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-12-18 19:38:03,300 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 63) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2019-12-18 19:38:03,300 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 60) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2019-12-18 19:38:03,302 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 72) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-12-18 19:38:03,313 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 53) WFLYRS0016: RESTEasy version 3.9.0.Final
+2019-12-18 19:38:03,320 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 70) WFLYSEC0002: Activating Security Subsystem
+2019-12-18 19:38:03,321 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 64) WFLYNAM0001: Activating Naming Subsystem
+2019-12-18 19:38:03,327 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 62) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+2019-12-18 19:38:03,337 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 74) WFLYWS0002: Activating WebServices Extension
+2019-12-18 19:38:03,338 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 58) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-12-18 19:38:03,345 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 61) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2019-12-18 19:38:03,346 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.17.Final)
+2019-12-18 19:38:03,350 INFO  [org.jboss.as.security] (MSC service thread 1-5) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-12-18 19:38:03,387 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0003: Undertow 2.0.26.Final starting
+2019-12-18 19:38:03,402 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 43) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-12-18 19:38:03,416 ERROR [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 43) WFLYCTL0013: Operation ("add") failed - address: ([
+    ("subsystem" => "datasources"),
+    ("jdbc-driver" => "hsqldb")
+]) - failure description: "WFLYJCA0115: Module for driver [com.hsqldb] or one of it dependencies is missing: [com.hsqldb]"
+2019-12-18 19:38:03,448 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-12-18 19:38:03,471 INFO  [org.jboss.as.naming] (MSC service thread 1-4) WFLYNAM0003: Starting Naming Service
+2019-12-18 19:38:03,474 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-12-18 19:38:03,560 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 73) WFLYUT0014: Creating file handler for path 'C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-12-18 19:38:04,140 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 52) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2019-12-18 19:38:04,144 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2019-12-18 19:38:04,144 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2019-12-18 19:38:04,175 INFO  [org.jboss.as.patching] (MSC service thread 1-7) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-12-18 19:38:04,181 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+2019-12-18 19:38:04,182 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 5.0.15.Final
+2019-12-18 19:38:04,183 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
+2019-12-18 19:38:04,190 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-2) WFLYDM0111: Keystore C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-12-18 19:38:04,192 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\deployments
+2019-12-18 19:38:04,433 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "crud-clientes-0.0.1.war" (runtime-name: "crud-clientes-0.0.1.war")
+2019-12-18 19:38:04,456 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2019-12-18 19:38:04,512 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0493: EJB subsystem suspension complete
+2019-12-18 19:38:04,587 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-12-18 19:38:05,062 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2019-12-18 19:38:05,164 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBossWS 5.3.0.Final (Apache CXF 3.3.3) 
+2019-12-18 19:38:05,893 INFO  [org.jboss.as.jpa] (MSC service thread 1-4) WFLYJPA0002: Read persistence.xml for crud-clientes
+2019-12-18 19:38:06,193 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment crud-clientes-0.0.1.war
+2019-12-18 19:38:06,295 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-8) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.16.Final
+2019-12-18 19:38:06,462 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-3) HV000001: Hibernate Validator 6.0.17.Final
+2019-12-18 19:38:06,488 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 76) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'crud-clientes-0.0.1.war#crud-clientes'
+2019-12-18 19:38:06,508 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 76) HHH000204: Processing PersistenceUnitInfo [
+	name: crud-clientes
+	...]
+2019-12-18 19:38:06,606 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 76) HHH000412: Hibernate Core {5.3.12.Final}
+2019-12-18 19:38:06,608 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 76) HHH000206: hibernate.properties not found
+2019-12-18 19:38:06,680 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'ClienteDAOImpl' in deployment unit 'deployment "crud-clientes-0.0.1.war"' are as follows:
+
+	java:global/crud-clientes-0.0.1/ClienteDAOImpl!br.com.sefaz.dao.ClienteDAO
+	java:app/crud-clientes-0.0.1/ClienteDAOImpl!br.com.sefaz.dao.ClienteDAO
+	java:module/ClienteDAOImpl!br.com.sefaz.dao.ClienteDAO
+	ejb:/crud-clientes-0.0.1/ClienteDAOImpl!br.com.sefaz.dao.ClienteDAO?stateful
+	java:global/crud-clientes-0.0.1/ClienteDAOImpl
+	java:app/crud-clientes-0.0.1/ClienteDAOImpl
+	java:module/ClienteDAOImpl
+
+2019-12-18 19:38:06,833 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 76) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+2019-12-18 19:38:07,011 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 77) WFLYCLINF0002: Started client-mappings cache from ejb container
+2019-12-18 19:38:07,244 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0004: Deploying JDBC-compliant driver class org.hsqldb.jdbc.JDBCDriver (version 2.4)
+2019-12-18 19:38:07,273 INFO  [org.jboss.weld.Version] (MSC service thread 1-2) WELD-000900: 3.1.2 (Final)
+2019-12-18 19:38:07,340 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = crud-clientes-0.0.1.war_org.hsqldb.jdbc.JDBCDriver_2_4
+2019-12-18 19:38:07,691 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 77) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'crud-clientes-0.0.1.war#crud-clientes'
+2019-12-18 19:38:07,884 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 77) HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2019-12-18 19:38:07,959 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 77) Envers integration enabled? : true
+2019-12-18 19:38:08,607 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 77) SQL Error: 42102, SQLState: 42S02
+2019-12-18 19:38:08,608 ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 77) Table "SYSTEM_SEQUENCES" not found; SQL statement:
+select sequence_name from information_schema.system_sequences [42102-193]
+2019-12-18 19:38:08,611 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 77) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@75822856
+2019-12-18 19:38:08,614 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 77) MSC000001: Failed to start service jboss.persistenceunit."crud-clientes-0.0.1.war#crud-clientes": org.jboss.msc.service.StartException in service jboss.persistenceunit."crud-clientes-0.0.1.war#crud-clientes": javax.persistence.PersistenceException: [PersistenceUnit: crud-clientes] Unable to build Hibernate SessionFactory
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:198)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:128)
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:658)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:212)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.lang.Thread.run(Unknown Source)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: crud-clientes] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:1016)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:942)
+	at org.jboss.as.jpa.hibernate5.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:170)
+	... 9 more
+Caused by: org.hibernate.exception.SQLGrammarException: Unable to build DatabaseInformation
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:106)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:140)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:96)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939)
+	... 11 more
+Caused by: org.h2.jdbc.JdbcSQLException: Table "SYSTEM_SEQUENCES" not found; SQL statement:
+select sequence_name from information_schema.system_sequences [42102-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.schema.Schema.getTableOrView(Schema.java:437)
+	at org.h2.command.Parser.readTableOrView(Parser.java:5372)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1257)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1897)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:2045)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:1891)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1709)
+	at org.h2.command.Parser.parseSelect(Parser.java:1697)
+	at org.h2.command.Parser.parsePrepared(Parser.java:445)
+	at org.h2.command.Parser.parse(Parser.java:317)
+	at org.h2.command.Parser.parse(Parser.java:289)
+	at org.h2.command.Parser.prepareCommand(Parser.java:254)
+	at org.h2.engine.Session.prepareLocal(Session.java:561)
+	at org.h2.engine.Session.prepareCommand(Session.java:502)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1203)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:73)
+	at org.jboss.jca.adapters.jdbc.WrappedStatement.executeQuery(WrappedStatement.java:397)
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:42)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:65)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:59)
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:132)
+	... 17 more
+
+2019-12-18 19:38:08,690 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "crud-clientes-0.0.1.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"crud-clientes-0.0.1.war#crud-clientes\"" => "javax.persistence.PersistenceException: [PersistenceUnit: crud-clientes] Unable to build Hibernate SessionFactory
+    Caused by: javax.persistence.PersistenceException: [PersistenceUnit: crud-clientes] Unable to build Hibernate SessionFactory
+    Caused by: org.hibernate.exception.SQLGrammarException: Unable to build DatabaseInformation
+    Caused by: org.h2.jdbc.JdbcSQLException: Table \"SYSTEM_SEQUENCES\" not found; SQL statement:
+select sequence_name from information_schema.system_sequences [42102-193]"}}
+2019-12-18 19:38:08,691 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("add") failed - address: ([
+    ("subsystem" => "datasources"),
+    ("data-source" => "crud-clientes")
+]) - failure description: {
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.jdbc-driver.hsqldb"],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => [
+        "jboss.driver-demander.java:jboss/datasources/crud-clientes is missing [jboss.jdbc-driver.hsqldb]",
+        "org.wildfly.data-source.crud-clientes is missing [jboss.jdbc-driver.hsqldb]"
+    ]
+}
+2019-12-18 19:38:08,691 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("add") failed - address: ([
+    ("subsystem" => "datasources"),
+    ("data-source" => "crud-clientes")
+]) - failure description: {
+    "WFLYCTL0412: Required services that are not installed:" => [
+        "jboss.jdbc-driver.hsqldb",
+        "jboss.jdbc-driver.hsqldb"
+    ],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => [
+        "jboss.driver-demander.java:jboss/datasources/crud-clientes is missing [jboss.jdbc-driver.hsqldb]",
+        "org.wildfly.data-source.crud-clientes is missing [jboss.jdbc-driver.hsqldb]",
+        "org.wildfly.data-source.crud-clientes is missing [jboss.jdbc-driver.hsqldb]"
+    ]
+}
+2019-12-18 19:38:08,704 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 44) WFLYSRV0010: Deployed "crud-clientes-0.0.1.war" (runtime-name : "crud-clientes-0.0.1.war")
+2019-12-18 19:38:08,707 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0184:    New missing/unsatisfied dependencies:
+      service jboss.jdbc-driver.hsqldb (missing) dependents: [service jboss.driver-demander.java:jboss/datasources/crud-clientes, service org.wildfly.data-source.crud-clientes] 
+WFLYCTL0186:   Services which failed to start:      service jboss.persistenceunit."crud-clientes-0.0.1.war#crud-clientes": javax.persistence.PersistenceException: [PersistenceUnit: crud-clientes] Unable to build Hibernate SessionFactory
+WFLYCTL0448: 183 additional services are down due to their dependencies being missing or failed
+2019-12-18 19:38:08,766 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-12-18 19:38:08,768 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2019-12-18 19:38:08,769 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2019-12-18 19:38:08,769 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 18.0.0.Final (WildFly Core 10.0.0.Final) started (with errors) in 8116ms - Started 700 of 1102 services (190 services failed or missing dependencies, 376 services are lazy, passive or on-demand)
+2019-12-18 19:40:42,562 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.1.Final
+2019-12-18 19:40:42,975 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.11.Final
+2019-12-18 19:40:42,986 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2019-12-18 19:40:43,121 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 18.0.0.Final (WildFly Core 10.0.0.Final) starting
+2019-12-18 19:40:43,122 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jre1.8.0_231\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jre1.8.0_231\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jre1.8.0_231
+	java.io.tmpdir = C:\Users\VICTOR~1.SIL\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jre1.8.0_231\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_231/bin/server;C:/Program Files/Java/jre1.8.0_231/bin;C:/Program Files/Java/jre1.8.0_231/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\PuTTY\;C:\Users\victor.hugo.b.silva\Downloads\apache-maven-3.6.0\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\TortoiseGit\bin;C:\Users\victor.hugo.b.silva\Downloads\instantclient_19_3;C:\Program Files\nodejs\;C:\Users\victor.hugo.b.silva\AppData\Local\Microsoft\WindowsApps;C:\Users\victor.hugo.b.silva\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\victor.hugo.b.silva\AppData\Local\Programs\Git\bin;C:\Users\victor.hugo.b.silva\AppData\Local\Programs\Git\cmd;C:\Users\victor.hugo.b.silva\AppData\Roaming\npm;;C:\workspace-oi\eclipse;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_231-b11
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_231
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.231-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final
+	jboss.host.name = cpx-pxua5rvztpr
+	jboss.modules.dir = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = cpx-pxua5rvztpr
+	jboss.qualified.host.name = cpx-pxua5rvztpr
+	jboss.server.base.dir = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone
+	jboss.server.config.dir = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\log
+	jboss.server.name = cpx-pxua5rvztpr
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\configuration\logging.properties
+	module.path = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\modules
+	org.jboss.boot.log.file = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\log\boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = JBossTools: WildFly 18.0
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jre1.8.0_231\lib\resources.jar;C:\Program Files\Java\jre1.8.0_231\lib\rt.jar;C:\Program Files\Java\jre1.8.0_231\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_231\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_231\lib\jce.jar;C:\Program Files\Java\jre1.8.0_231\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_231\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_231\classes
+	sun.boot.library.path = C:\Program Files\Java\jre1.8.0_231\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.country.format = BR
+	user.dir = C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\bin
+	user.home = C:\Users\victor.hugo.b.silva
+	user.language = en
+	user.language.format = pt
+	user.name = victor.hugo.b.silva
+	user.script = 
+	user.timezone = GMT-03:00
+	user.variant = 
+2019-12-18 19:40:43,127 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=JBossTools: WildFly 18.0 -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\log\boot.log -Dlogging.configuration=file:C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\configuration\logging.properties -Djboss.home.dir=C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2019-12-18 19:40:44,011 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 1.10.3.Final
+2019-12-18 19:40:44,539 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-18 19:40:44,562 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 5) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-18 19:40:44,581 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0015: Re-attempting failed deployment crud-clientes-0.0.1.war
+2019-12-18 19:40:44,602 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found crud-clientes-0.0.1.war in deployment directory. To trigger deployment create a file called crud-clientes-0.0.1.war.dodeploy
+2019-12-18 19:40:44,633 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-12-18 19:40:44,656 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.7.3.Final
+2019-12-18 19:40:44,668 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.7.3.Final
+2019-12-18 19:40:44,722 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 51) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-12-18 19:40:44,738 INFO  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.17.Final)
+2019-12-18 19:40:44,753 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 58) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-12-18 19:40:44,755 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 60) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2019-12-18 19:40:44,761 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 53) WFLYRS0016: RESTEasy version 3.9.0.Final
+2019-12-18 19:40:44,761 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 72) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-12-18 19:40:44,791 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 63) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2019-12-18 19:40:44,798 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 62) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+2019-12-18 19:40:44,804 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 64) WFLYNAM0001: Activating Naming Subsystem
+2019-12-18 19:40:44,804 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 70) WFLYSEC0002: Activating Security Subsystem
+2019-12-18 19:40:44,809 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 74) WFLYWS0002: Activating WebServices Extension
+2019-12-18 19:40:44,814 INFO  [org.jboss.as.security] (MSC service thread 1-6) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-12-18 19:40:44,834 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 61) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2019-12-18 19:40:44,862 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 43) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-12-18 19:40:44,883 ERROR [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 43) WFLYCTL0013: Operation ("add") failed - address: ([
+    ("subsystem" => "datasources"),
+    ("jdbc-driver" => "hsqldb")
+]) - failure description: "WFLYJCA0115: Module for driver [com.hsqldb] or one of it dependencies is missing: [com.hsqldb]"
+2019-12-18 19:40:44,928 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-12-18 19:40:44,994 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 2.0.26.Final starting
+2019-12-18 19:40:44,999 INFO  [org.jboss.as.naming] (MSC service thread 1-1) WFLYNAM0003: Starting Naming Service
+2019-12-18 19:40:45,000 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-12-18 19:40:45,053 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 73) WFLYUT0014: Creating file handler for path 'C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-12-18 19:40:45,612 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 52) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2019-12-18 19:40:45,615 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2019-12-18 19:40:45,615 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2019-12-18 19:40:45,669 INFO  [org.jboss.as.patching] (MSC service thread 1-6) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-12-18 19:40:45,678 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.15.Final
+2019-12-18 19:40:45,678 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0012: Started server default-server.
+2019-12-18 19:40:45,680 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0018: Host default-host starting
+2019-12-18 19:40:45,686 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-6) WFLYDM0111: Keystore C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-12-18 19:40:45,689 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\victor.hugo.b.silva\Documents\wildfly-18.0.0.Final\standalone\deployments
+2019-12-18 19:40:45,946 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "crud-clientes-0.0.1.war" (runtime-name: "crud-clientes-0.0.1.war")
+2019-12-18 19:40:45,977 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2019-12-18 19:40:46,016 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0493: EJB subsystem suspension complete
+2019-12-18 19:40:46,101 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-12-18 19:40:46,581 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2019-12-18 19:40:46,691 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBossWS 5.3.0.Final (Apache CXF 3.3.3) 
+2019-12-18 19:40:47,454 INFO  [org.jboss.as.jpa] (MSC service thread 1-4) WFLYJPA0002: Read persistence.xml for crud-clientes
+2019-12-18 19:40:47,740 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment crud-clientes-0.0.1.war
+2019-12-18 19:40:47,825 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-1) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.16.Final
+2019-12-18 19:40:48,007 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-4) HV000001: Hibernate Validator 6.0.17.Final
+2019-12-18 19:40:48,055 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 76) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'crud-clientes-0.0.1.war#crud-clientes'
+2019-12-18 19:40:48,078 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 76) HHH000204: Processing PersistenceUnitInfo [
+	name: crud-clientes
+	...]
+2019-12-18 19:40:48,164 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 76) HHH000412: Hibernate Core {5.3.12.Final}
+2019-12-18 19:40:48,165 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 76) HHH000206: hibernate.properties not found
+2019-12-18 19:40:48,200 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'ClienteDAOImpl' in deployment unit 'deployment "crud-clientes-0.0.1.war"' are as follows:
+
+	java:global/crud-clientes-0.0.1/ClienteDAOImpl!br.com.sefaz.dao.ClienteDAO
+	java:app/crud-clientes-0.0.1/ClienteDAOImpl!br.com.sefaz.dao.ClienteDAO
+	java:module/ClienteDAOImpl!br.com.sefaz.dao.ClienteDAO
+	ejb:/crud-clientes-0.0.1/ClienteDAOImpl!br.com.sefaz.dao.ClienteDAO?stateful
+	java:global/crud-clientes-0.0.1/ClienteDAOImpl
+	java:app/crud-clientes-0.0.1/ClienteDAOImpl
+	java:module/ClienteDAOImpl
+
+2019-12-18 19:40:48,387 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 76) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+2019-12-18 19:40:48,509 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 77) WFLYCLINF0002: Started client-mappings cache from ejb container
+2019-12-18 19:40:48,750 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0004: Deploying JDBC-compliant driver class org.hsqldb.jdbc.JDBCDriver (version 2.4)
+2019-12-18 19:40:48,783 INFO  [org.jboss.weld.Version] (MSC service thread 1-3) WELD-000900: 3.1.2 (Final)
+2019-12-18 19:40:48,864 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = crud-clientes-0.0.1.war_org.hsqldb.jdbc.JDBCDriver_2_4
+2019-12-18 19:40:49,185 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 76) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'crud-clientes-0.0.1.war#crud-clientes'
+2019-12-18 19:40:49,378 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 76) HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2019-12-18 19:40:49,452 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 76) Envers integration enabled? : true
+2019-12-18 19:40:50,189 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 76) SQL Error: 42102, SQLState: 42S02
+2019-12-18 19:40:50,189 ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 76) Table "SYSTEM_SEQUENCES" not found; SQL statement:
+select sequence_name from information_schema.system_sequences [42102-193]
+2019-12-18 19:40:50,193 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 76) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@72b7e0a3
+2019-12-18 19:40:50,197 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 76) MSC000001: Failed to start service jboss.persistenceunit."crud-clientes-0.0.1.war#crud-clientes": org.jboss.msc.service.StartException in service jboss.persistenceunit."crud-clientes-0.0.1.war#crud-clientes": javax.persistence.PersistenceException: [PersistenceUnit: crud-clientes] Unable to build Hibernate SessionFactory
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:198)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:128)
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:658)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:212)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.lang.Thread.run(Unknown Source)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: crud-clientes] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:1016)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:942)
+	at org.jboss.as.jpa.hibernate5.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:170)
+	... 9 more
+Caused by: org.hibernate.exception.SQLGrammarException: Unable to build DatabaseInformation
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:106)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:140)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:96)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939)
+	... 11 more
+Caused by: org.h2.jdbc.JdbcSQLException: Table "SYSTEM_SEQUENCES" not found; SQL statement:
+select sequence_name from information_schema.system_sequences [42102-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.schema.Schema.getTableOrView(Schema.java:437)
+	at org.h2.command.Parser.readTableOrView(Parser.java:5372)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1257)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1897)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:2045)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:1891)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1709)
+	at org.h2.command.Parser.parseSelect(Parser.java:1697)
+	at org.h2.command.Parser.parsePrepared(Parser.java:445)
+	at org.h2.command.Parser.parse(Parser.java:317)
+	at org.h2.command.Parser.parse(Parser.java:289)
+	at org.h2.command.Parser.prepareCommand(Parser.java:254)
+	at org.h2.engine.Session.prepareLocal(Session.java:561)
+	at org.h2.engine.Session.prepareCommand(Session.java:502)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1203)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:73)
+	at org.jboss.jca.adapters.jdbc.WrappedStatement.executeQuery(WrappedStatement.java:397)
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:42)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:65)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:59)
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:132)
+	... 17 more
+
+2019-12-18 19:40:50,204 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "crud-clientes-0.0.1.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"crud-clientes-0.0.1.war#crud-clientes\"" => "javax.persistence.PersistenceException: [PersistenceUnit: crud-clientes] Unable to build Hibernate SessionFactory
+    Caused by: javax.persistence.PersistenceException: [PersistenceUnit: crud-clientes] Unable to build Hibernate SessionFactory
+    Caused by: org.hibernate.exception.SQLGrammarException: Unable to build DatabaseInformation
+    Caused by: org.h2.jdbc.JdbcSQLException: Table \"SYSTEM_SEQUENCES\" not found; SQL statement:
+select sequence_name from information_schema.system_sequences [42102-193]"}}
+2019-12-18 19:40:50,205 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("add") failed - address: ([
+    ("subsystem" => "datasources"),
+    ("data-source" => "crud-clientes")
+]) - failure description: {
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.jdbc-driver.hsqldb"],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => [
+        "org.wildfly.data-source.crud-clientes is missing [jboss.jdbc-driver.hsqldb]",
+        "jboss.driver-demander.java:jboss/datasources/crud-clientes is missing [jboss.jdbc-driver.hsqldb]"
+    ]
+}
+2019-12-18 19:40:50,273 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("add") failed - address: ([
+    ("subsystem" => "datasources"),
+    ("data-source" => "crud-clientes")
+]) - failure description: {
+    "WFLYCTL0412: Required services that are not installed:" => [
+        "jboss.jdbc-driver.hsqldb",
+        "jboss.jdbc-driver.hsqldb"
+    ],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => [
+        "org.wildfly.data-source.crud-clientes is missing [jboss.jdbc-driver.hsqldb]",
+        "jboss.driver-demander.java:jboss/datasources/crud-clientes is missing [jboss.jdbc-driver.hsqldb]",
+        "org.wildfly.data-source.crud-clientes is missing [jboss.jdbc-driver.hsqldb]"
+    ]
+}
+2019-12-18 19:40:50,284 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 44) WFLYSRV0010: Deployed "crud-clientes-0.0.1.war" (runtime-name : "crud-clientes-0.0.1.war")
+2019-12-18 19:40:50,286 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0184:    New missing/unsatisfied dependencies:
+      service jboss.jdbc-driver.hsqldb (missing) dependents: [service jboss.driver-demander.java:jboss/datasources/crud-clientes, service org.wildfly.data-source.crud-clientes] 
+WFLYCTL0186:   Services which failed to start:      service jboss.persistenceunit."crud-clientes-0.0.1.war#crud-clientes": javax.persistence.PersistenceException: [PersistenceUnit: crud-clientes] Unable to build Hibernate SessionFactory
+WFLYCTL0448: 183 additional services are down due to their dependencies being missing or failed
+2019-12-18 19:40:50,342 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-12-18 19:40:50,345 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2019-12-18 19:40:50,345 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2019-12-18 19:40:50,345 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 18.0.0.Final (WildFly Core 10.0.0.Final) started (with errors) in 8243ms - Started 700 of 1102 services (190 services failed or missing dependencies, 376 services are lazy, passive or on-demand)
